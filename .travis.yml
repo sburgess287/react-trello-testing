@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: hPLati/qWC1XSUlbkRfJf6N4TWwTtqSWCMds20BwAaXkFJHHNw576ZVEkkjhHGo3JdsQibalhzDcWDwO2ZJFdz7TapmAOEvoJ5YqLNB191k145svKTepHH5Z4L5rOrdv+mc4QEmV/6aTqGPGdslEigDSxGQ5jryZAWNk6DeprtwCicfMLPc+K2t8nfd/zSJODfLxw0NbL+NrCOL2ZR2znUX9+plAvW09oG8QyPXuyeeX2uZ2cz9h5yqUi5le6k8HMMweOFUhg3Tr7BhFeXRSlFs/uLmz5cQf8ypc2LmMBt88mz5T7+qyt0sNO14NI1tsKsPC6fEuQiWLaP0cYW1UxgQ1MP1HKH4PAha2TuhkCBtwnowSxhAhxfh7rAcXoDqcQIEKf/O64Zacq9yLmUG5jZr+ULmJbkdnJdN9ToY3T22YKGQR5T5ISMofd30L9oUNdCGKfvBibPKXrg6W2CkjFmvFt2TfJNdubBbNWf3uyYFD7lPMD3J4/mcH9oXKUFFafWntlZ0WpPLqdW0q9d/ZHFnBT8C5rG3NqpY0i8NquSS1IDiF1PW/dXlfxoh7TJJSvE3StG3gMCZZJDZI1KqFGHSv2T8lEgv6tZZ9EwB0XdHKV5CcrDiTD/J43IPDeTcCf/IF79+BJ+U3/zOqFUlfxg3LrxioVzOFcQdWDPh9INc=
+  app: powerful-scrubland-73327
+  on:
+    repo: sburgess287/react-trello-testing
